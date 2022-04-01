@@ -1,21 +1,19 @@
 import React from "react";
-import Navbar from "./components/Navbar"
-import Country from "./components/Country";
+import Info from "./components/Info"
+import About from "./components/About";
+import Interests from "./components/Interests";
 import Footer from "./components/Footer";
 import "./style.css"
-import data from "./components/data"
 
 export default function App () {
-    const journal = data.map(item => {
-        return <Country key = {item.id} item = {item}/>
-    })
     return (
-        <> 
-            <Navbar/>
-            <main>
-                {journal}
-            </main>
+        <div className="container">
+            <Info/>
+            <div className="information">
+            <About/>
+            <Interests/>
+            </div>
             <Footer/>
-        </>
+        </div>
     )
 }
