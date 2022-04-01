@@ -1,104 +1,108 @@
+:root {
+    --grey: #918E9B;
+    --light-red: #F55A5A;
+    --white: #ffffff;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
-body, html {
-    background: #23252C;
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+main {
     display: flex;
-    text-align: center;
+    flex-direction: column;
+    text-align: left;
     align-items: center;
     justify-content: center;
 }
 
-#root {
-    margin: 15px 0px 15px 0px;
+header {
+    background-color: var(--light-red);
+    width: 100%;
+    padding: 1.5em;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    max-width: 375px;
-    background-color: #1A1B21;
-    overflow: hidden;
-    border-radius: 12.5px;
-    font-family: 'Inter', sans-serif;
-    color: white;
-}
-
-.text-center, .links {
+header, footer {
     text-align: center;
-    padding: 15px 0px 10px 0px;
 }
 
-.interest-section {
-    padding: 2.5rem 0rem;
-}
-
-.information {
-    display: flex;
-    flex-direction: column;
-    padding: 15px 40px;
-    text-align: left;
-}
-
-.information p {
-    font-size: 12.75px;
-    color: #DCDCDC;
-    line-height: 150%;
-    font-style: normal;
-}
-
-.container img {
-   width: 375px;
-}
-
-.footer-icons {
-    display: flex;
-    justify-content: center;
-    font-size: 35px;
-}
-
-.footer-icons i {
-    padding-right: 1rem;
-    color: #918E9B;
-}
-
-.links button {
-    padding: 10px 20px;
-    font-size: 18.5px;
-    border-radius: 6px;
-    margin-right: 0.5rem;
-    border: unset;
-    line-height: 16px;
+.travel--text {
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.075em;
+    padding-left: 5px;
+    text-transform: lowercase;
+    color: var(--white);
+    margin-top: 3px;
     font-weight: 500;
 }
 
-.email {
-    background-color: white;
+main {
+    margin: 1em auto;
+    max-width: 700px;
 }
 
-.git-b {
-    background-color: #6e5494;
-    color: white;
+.row {
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
 }
 
-footer {
-    background-color: #161619;
-    padding: 10px 0px;
+.image--column {
+    margin-right: 20px;
 }
 
-.links button:hover, .footer-icons:hover {
-    cursor: pointer;
+.row img {
+    width: 125px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 7.5px;
 }
 
-.color {
-    color: #F3BF99;
-    line-height: 15px;
-    font-size: 12.75px;
-    margin-bottom: 15px;
+.travel--column, footer {
+    font-size: 12px;
 }
 
-.website {
-    font-size: 11.5px;
+.travel--column span {
+    padding-right: 1rem;
+    line-height: 12px;
+}
+
+.travel--column p {
+    margin-top: .1rem;
+}
+
+.location--name {
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+}
+
+.country--name {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    padding: 0.25rem 0 1rem 0;
+}
+
+.grey-text a {
+    color: var(--grey);
+}
+
+.row svg {
+    margin-right: 0.25rem;
+    color: var(--light-red);
+}
+
+header svg {
+    font-size: 24px;
+    color: var(--white);
+}
+
+.travel--column span:nth-child(1) {
+    font-weight: 900;
 }
